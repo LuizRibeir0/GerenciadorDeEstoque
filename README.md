@@ -8,7 +8,7 @@ Ideal para pequenos comércios que precisam controlar produtos, entradas, saída
 <div align="center">
 
 ### 🖼️ Banner do Projeto  
-<img src="https://via.placeholder.com/1100x280.png?text=Gerenciador+de+Estoque+-+Doce+Vida" />
+<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/12fbf9dc-5790-41fb-99af-ff90ecb61307" />
 
 </div>
 
