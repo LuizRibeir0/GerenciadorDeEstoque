@@ -76,20 +76,15 @@ O sistema permite:
 # ⚙️ Como Executar
 
 ### 1️⃣ Clonar o repositório
-```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
+[git clone https://github.com/seu-usuario/seu-repo.git](https://github.com/LuizRibeir0/GerenciadorDeEstoque.git
+
 2️⃣ Rodar o projeto
-bash
-Copiar código
 mvn spring-boot:run
 A interface Swing abrirá automaticamente após o backend iniciar.
 
 🗄️ Configuração do Banco H2
 O projeto usa um banco persistido em arquivo:
 
-ini
-Copiar código
 spring.datasource.url=jdbc:h2:file:./data/estoque;AUTO_SERVER=TRUE
 spring.datasource.username=sa
 spring.datasource.password=
@@ -106,8 +101,6 @@ Senha: (vazia)
 ---
 
 📚 Estrutura do Projeto
-css
-Copiar código
 src/main/java/com/docevida/GerenciadorDeEstoque
 │
 ├── model/        → Entidades (Produto)
