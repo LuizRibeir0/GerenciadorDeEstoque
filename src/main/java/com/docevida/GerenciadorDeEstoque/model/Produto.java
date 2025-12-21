@@ -20,6 +20,7 @@ public class Produto {
     private Integer quantidade;
     private BigDecimal precoCompra;
     private BigDecimal precoVenda;
+    private String imagem;
 
     @Override
     public String toString() {

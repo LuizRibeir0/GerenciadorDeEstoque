@@ -42,7 +42,7 @@ public class TelaListarProdutos extends JFrame {
     }
 
     private void carregarTabela() {
-        modelo.setRowCount(0); // limpa a tabela
+        modelo.setRowCount(0);
 
         List<Produto> produtos = produtoService.listarTodos();
 
