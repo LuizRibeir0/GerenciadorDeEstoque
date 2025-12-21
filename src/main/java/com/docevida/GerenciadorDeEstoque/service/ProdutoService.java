@@ -20,9 +20,6 @@ public class ProdutoService {
         return produtoRepository.save(produto);
     }
 
-    public void detarProduto(Long id) {
-    }
-
     public List<Produto> listarTodos() {
         return produtoRepository.findAll();
     }
