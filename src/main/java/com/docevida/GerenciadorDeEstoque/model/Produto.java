@@ -1,9 +1,6 @@
 package com.docevida.GerenciadorDeEstoque.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -15,12 +12,16 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nome;
+
     private String categoria;
+
     private Integer quantidade;
+
     private BigDecimal precoCompra;
+
     private BigDecimal precoVenda;
-    private String imagem;
 
     @Override
     public String toString() {

@@ -30,7 +30,6 @@ public class TelaCadastroProduto extends JFrame {
 
         JLabel lblPreco = new JLabel("Preço:");
         JTextField txtPreco = new JTextField();
-
         JButton btnSalvar = new JButton("Salvar");
 
         add(lblNome);
@@ -39,7 +38,6 @@ public class TelaCadastroProduto extends JFrame {
         add(txtQuantidade);
         add(lblPreco);
         add(txtPreco);
-        add(new JLabel()); // espaço vazio
         add(btnSalvar);
 
         btnSalvar.addActionListener(e -> {
@@ -47,11 +45,10 @@ public class TelaCadastroProduto extends JFrame {
                 String nome = txtNome.getText().trim();
                 int quantidade = Integer.parseInt(txtQuantidade.getText().trim());
                 BigDecimal preco = new BigDecimal(txtPreco.getText().trim());
-
                 Produto produto = new Produto();
                 produto.setNome(nome);
                 produto.setQuantidade(quantidade);
-                produto.setPrecoVenda(preco); // ou setPrecoCompra, dependendo do seu modelo
+                produto.setPrecoVenda(preco);
 
                 produtoService.salvarProduto(produto);
 
