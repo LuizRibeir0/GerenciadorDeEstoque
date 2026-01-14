@@ -1,3 +1,0 @@
-2025-11-18 23:12:02.547750-03:00 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select from [*]* PRODUTO"; expected "identifier"; SQL statement:
-select from * PRODUTO [42001-232]
