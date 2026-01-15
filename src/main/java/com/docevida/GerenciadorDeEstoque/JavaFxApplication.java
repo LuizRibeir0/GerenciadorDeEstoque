@@ -1,5 +1,6 @@
 package com.docevida.GerenciadorDeEstoque;
 
+import com.docevida.GerenciadorDeEstoque.config.SpringContext;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,6 +19,8 @@ public class JavaFxApplication extends Application {
         context = new SpringApplicationBuilder(EstoqueApplication.class)
                 .web(org.springframework.boot.WebApplicationType.NONE)
                 .run();
+
+        SpringContext.setContext(context);
     }
 
     @Override
