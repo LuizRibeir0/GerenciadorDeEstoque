@@ -30,8 +30,23 @@ public class MainController {
         }
     }
 
-    public void abrirCadastro(ActionEvent event) {
-        System.out.println("Abrir tela de cadastro");
+    @FXML
+    public void abrirCadastro() {
+        try {
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource("/fxml/cadastro-produto.fxml")
+            );
+
+            loader.setControllerFactory(SpringContext.getContext()::getBean);
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(loader.load()));
+            stage.setTitle("Cadastrar Produto");
+            stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void sair(ActionEvent event) {
