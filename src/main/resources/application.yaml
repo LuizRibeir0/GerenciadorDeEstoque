@@ -2,9 +2,9 @@ spring:
   application:
     name: gerenciadorDeEstoque
   datasource:
-    url: 'jdbc:mysql://${MYSQL_HOST:localhost}:3306/gerenciador_estoque'
-    username: root
-    password: Lui$Jasmim1227
+    url: 'jdbc:mysql://${MYSQL_HOST:db}:3306/${MYSQL_DATABASE}'
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database: MYSQL
@@ -13,4 +13,4 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MariaDBDialect
+        dialect: org.hibernate.dialect.MySQLDialect

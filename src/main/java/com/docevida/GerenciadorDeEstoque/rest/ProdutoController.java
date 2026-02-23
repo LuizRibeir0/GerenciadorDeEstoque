@@ -29,4 +29,9 @@ public class ProdutoController {
     public void excluirProduto(@PathVariable long id) {
         produtoService.deletarProduto(id);
     }
+
+    @GetMapping("/dockerTeste")
+    public String testeDocker() {
+        return "Testando docker";
+    }
 }
